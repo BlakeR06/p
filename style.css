@@ -1,0 +1,76 @@
+body{
+    overflow-x: hidden;
+    background-color: rgb(29, 29, 29);
+}
+
+section{
+    position: relative;
+    display: flex;
+    height: 30vh;
+    justify-content: center;
+    transition: height 0.7s ;
+}
+
+section .text{
+    position: relative;
+    font-size: 2.5em;
+    color: white;
+    letter-spacing: 2px;
+    transition: font-size 0.7s;
+    white-space: nowrap;
+}
+
+/* wave animation */
+section .text span{
+    position: relative;
+    display: inline-block;
+    animation: wave 5s ease-in-out infinite;
+}
+
+@keyframes wave{
+    0%{
+        transform: translateY(0px);
+    }
+    4%{
+        transform: translateY(-50px);
+    }
+    8%{
+        transform: translateY(0px);
+    }
+}
+
+
+/* title styling */
+#title{
+    font-family: 'Bagel Fat One', cursive;
+    font-weight: 100;
+    color: rgb(156, 77, 230);
+}
+
+@media screen and (min-width: 500px){
+    #title{
+        font-size: 3em;
+    }
+}
+@media screen and (min-width: 700px){
+    #title{
+        font-size: 4em;
+    }
+}
+@media screen and (min-width: 1000px){
+    #title{
+        font-size: 6em;
+    }
+    section{
+        height: 40vh;
+    }
+}
+
+#cover{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(29, 29, 29, 10);
+    top: 0;
+    transition: opacity 0.7s;
+}

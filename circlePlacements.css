@@ -1,0 +1,121 @@
+
+  .circleContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px; /* Adjust this value to control the spacing between circles */
+    width: 100%;
+    height: 100%;
+    transition: gap 0.7s;
+  }
+  
+  .circle {
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    height: 100px;
+    width: 100px;
+    transition: height 0.7s, width 0.7s, font-size 0.7s, color 0.7s, background 0.7s;
+    font-family: 'Bagel Fat One', cursive;
+    font-weight: 100;
+    font-size: 1em;
+  }
+  
+  #red {
+    background-color: red;
+    color: pink;
+  }
+  
+  #blue {
+    background-color: blue;
+    color: rgb(160, 160, 255);
+  }
+  
+  #green {
+    background-color: green;
+    color: greenyellow;
+  }
+  
+  #purple {
+    background-color: purple;
+    color: plum;
+  }
+
+
+  .circle:hover{
+    height: 120px;
+    width: 120px;
+    font-size: 1.2em;
+}
+
+#red:hover{
+    background: pink;
+    color: red;
+}
+
+#blue:hover{
+    background: rgb(160, 160, 255);
+    color: blue;
+}
+
+#green:hover{
+    background: greenyellow;
+    color: green;
+}
+
+#purple:hover{
+    background: plum;
+    color: purple;
+}
+
+
+  @media screen and (min-width: 500px){
+    .circle{
+        height: 100px;
+        width: 100px;
+    }
+
+    .circle:hover{
+        height: 120px;
+        width: 120px;
+    }
+}
+@media screen and (min-width: 700px){
+    .circle{
+        height: 150px;
+        width: 150px;
+        font-size: 2em;
+    }
+
+    .circleContainer{
+        gap: 20px;
+    }
+
+    .circle:hover{
+        height: 190px;
+        width: 190px;
+        font-size: 2.4em;
+    }
+}
+@media screen and (min-width: 1000px){
+    .circle{
+        height: 200px;
+        width: 200px;
+        font-size: 2.7em;
+    }
+
+    .circle:hover{
+        height: 250px;
+        width: 250px;
+        font-size: 3em;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .circleContainer{
+        gap: 100px;
+    }
+}
